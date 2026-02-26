@@ -38,3 +38,24 @@ const calculator = (number1, number2, operator) => {
 };
 
 console.log(calculator(10, 5, "+"));
+
+
+const calculator2 = (number1, number2, operator) => {
+  const a = Number(number1);
+  const b = Number(number2);
+
+  if (Number.isNaN(a) || Number.isNaN(b)) {
+    throw new Error("Tham số phải là số (có thể chuyển đổi được sang số).");
+  }
+
+  switch (operator) {
+    case "+": return a + b;
+    case "-": return a - b;
+    case "*": return a * b;
+    case "/":
+      if (b === 0) throw new Error("Không thể chia cho 0");
+      return a / b;
+    default:
+      throw new Error(`Toán tử không hợp lệ: ${operator}. Hãy dùng "+", "-", "*", "/"`);
+  }
+};
