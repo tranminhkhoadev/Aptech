@@ -22,3 +22,19 @@ function calculatePytago(canhGocVuong1, canhGocVuong2) {
 }
 
 console.log(`Cạnh huyền có kết quả là: ${calculatePytago(3, 4)}`);
+
+
+
+const calculator = (number1, number2, operator) => {
+    if (operator === "+") {
+        return number1 + number2;
+    } else if (operator === "-") {
+        return number1 - number2;
+    } else if (operator === "*") {
+        return number1 * number2;
+    } else if (operator === "/") {
+        return number1 / number2;
+    }
+};
+
+console.log(calculator(10, 5, "+"));
