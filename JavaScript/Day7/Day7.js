@@ -6,8 +6,24 @@
 
 
 
-const friends = ["Hùng", "Thanh", "Khanh"]
+let friends = ["Hùng", "Bình", "Chi"];
 
-friends.push("Lộc")
-console.log(friends.length);
-console.log(friends[0]);
+friends.unshift("Dương"); 
+
+friends.pop(); 
+
+friends.splice(1, 1, "Giang"); 
+
+for (let i = 0; i < friends.length; i += 1) {}
+    console.log("Người bạn thứ " + (i + 1) + " là: " + friends[i]);
+
+
+
+
+
+
+
+
+//friends.push("Lộc")
+//console.log(friends.length);
+//console.log(friends[0]);
