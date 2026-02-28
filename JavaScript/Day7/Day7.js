@@ -10,4 +10,4 @@ const friends = ["Hùng", "Thanh", "Khanh"]
 
 friends.push("Lộc")
 console.log(friends.length);
-console.log(friends[1]);
+console.log(friends[0]);
